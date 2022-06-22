@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+.titleContainer {
+  height: 5vh;
+  background-color: #107c41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.menuContainer {
+  height: 5vh;
+  /* background-color:aqua; */
+  background-color: #107c41;
+  display: flex;
+  color: #fff;
+  /* align-items: center; */
+}
+.menuOptions {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menuOptions:hover {
+  background-color: #0d6133;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #fff;
+  color: #107c41;
+}
+.selected:hover {
+  background-color: #fff;
+}
+.menuIconsContainer {
+  height: 6vh;
+  background-color: rgba(211, 211, 211, 0.456);
+  display: flex;
+  /* align-items: center; */
+
+  /* background-color:blue; */
+}
+.formulaBar {
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.456);
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+.dataContainer {
+  height: 74vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.SmallContainer {
+  height: 20px;
+  width: 20px;
+  border: 1px solid lightgray;
+}
+.columnNameContainer {
+  /* position:absolute; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  width: calc(100vw - 20px);
+  height: 20px;
+  border: 1px solid lightgray;
+  /* overflow: hidden; */
+}
+.rowNameContainer {
+  width: 20px;
+  height: calc(74vh - 20px);
+  border: 1px solid lightgray;
+  /* overflow: hidden; */
+}
+.inputCellsContainer {
+  width: calc(100vw - 20px);
+  height: calc(74vh - 20px);
+  border: 1px solid lightgray;
+  overflow: scroll;
+
+}
+.sheetBarContainer {
+  height: 4vh;
+  /* background-color:aqua; */
+  display: flex;
+  align-items: center;
+}
+.menIcons {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+}
+.menIcons:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+.Selector {
+  margin-top: 4px;
+  height: 80%;
+  width: 150px;
+  font-size: 20px;
+}
+.Selector:hover{
+    cursor: pointer;
+}
+.addIcon {
+  color: #107c41;
+}
+
+.leftArrow {
+  /* width: 25px; */
+  margin-left: 0.5rem;
+}
+.rightArrow {
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+  /* width: px; */
+}
+.rightArrow:hover,
+.leftArrow:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+.addCircle {
+  width: 3rem;
+}
+.addCircle:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.allSheets {
+  border: 1px solid lightgray;
+  width: 86.5rem;
+}
+.sheetNameOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  border-bottom: 4px solid #0d6133;
+  border-right: 1px solid lightgray;
+  font-weight: 700;
+}
+.sheetNameOne:hover{
+    cursor: default;
+
+}
+
+.columnName{
+  min-width: 100px;
+  /* to make an element aligned vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid lightgray;
+  font-weight:500;
+}
+
+
+.columnNameContainer{
+  display: flex;
+
+}
+
+.rowName{
+  height: 25px;
+  border-bottom: 1px solid lightgray;
+  font-weight: 500;
+}
+.cellRow{
+  display: flex;
+  flex-direction: row;
+  /* overflow: s; */
+}
+.inputCell{
+  min-height: 25px;
+  min-width: 100px;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  outline-color:#107c41 ;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-left: 4px;
+  
+}
+
+
+
+.formulaEditor{
+  height: 70%;
+  border: 1px solid lightgray;
+  background-color: #fff;
+}
+
+.functionTool{
+  height:70%;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid lightgray; */
+}
+
+.cellDetails{
+  width: 120px;
+  /* margin-left: 7px; */
+}
+
+.cellData{
+  width: calc(100vw - 160px);
+  /* margin-right: 7px; */
+  display: flex;
+  padding-left: 8px;
+  align-items: center;
+  font-size: 17px;
+  outline-color: #107c41;
+}
+
+.fontStyleIcon.selected{
+  background-color: lightgray;
+  color: black;
+}
+
+.alignIcon.selected{
+  background-color: lightgray;
+  color: black;
+}
+
+.inputCell.selected{
+  border: 2px solid #107c41;
+  color: black;
+}

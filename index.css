@@ -244,3 +244,20 @@ body {
   border: 2px solid #107c41;
   color: black;
 }
+
+.inputCell.top-cell-selected{
+  border-top: none;
+  /* outline: none;  */
+  /* outline: #107c41; */
+}
+
+.inputCell.bottom-cell-selected{
+  border-bottom: 1px solid lightgray;
+  /* outline: #107c41; */
+}
+.inputCell.left-cell-selected{
+  border-left:none;
+}
+.inputCell.right-cell-selected{
+  border-right:1px solid lightgray
+}
